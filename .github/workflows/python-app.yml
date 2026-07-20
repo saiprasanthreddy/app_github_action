@@ -3,11 +3,10 @@ name: Python CI
 # Trigger the workflow on any push to the main branch or pull request
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
+  workflow_dispatch: # <--- Add this line to enable manual triggering
 
 jobs:
   test:
